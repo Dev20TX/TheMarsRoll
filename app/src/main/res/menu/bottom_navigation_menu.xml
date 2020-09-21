@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/curiosityFragment"
+        android:title="Curiosity Rover"
+        android:icon="@drawable/ic_curiosity"/>
+
+    <item android:id="@+id/savedPhotosFragment"
+        android:title="Saved"
+        android:icon="@drawable/ic_favorite"/>
+
+</menu>

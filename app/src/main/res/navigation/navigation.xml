@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/curiosityFragment">
+    <fragment
+        android:id="@+id/curiosityFragment"
+        android:name="com.dev20.ui.fragments.CuriosityFragment"
+        android:label="fragment_curiosity"
+        tools:layout="@layout/fragment_curiosity" >
+        <action
+            android:id="@+id/action_curiosityFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.dev20.ui.fragments.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right">
+        <argument
+            android:name="photo"
+            app:argType="com.dev20.themarsroll.models.Photo" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedPhotosFragment"
+        android:name="com.dev20.ui.fragments.SavedPhotosFragment"
+        android:label="SavedPhotosFragment" >
+        <action
+            android:id="@+id/action_savedPhotosFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+</navigation>

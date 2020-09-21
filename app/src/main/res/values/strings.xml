@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">The Mars Roll</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mars_curiosity_rover">Mars Curiosity Rover</string>
+    <string name="date">DATE</string>
+</resources>
